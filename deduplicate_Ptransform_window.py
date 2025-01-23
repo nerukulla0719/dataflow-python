@@ -21,7 +21,7 @@ def run():
         # Input data: Stream of JSON strings
         input = (
             p
-            | "ReadFromSource" >> beam.io.ReadFromText("path/to/input/source")  
+            | "ReadFromSource" >> beam.io.ReadFromText("/users/Documents/input.txt") 
         )
 
         # Parse messages
